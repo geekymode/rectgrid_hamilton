@@ -23,7 +23,7 @@ link-citations: yes
 knitr::include_graphics("figures/icosian_paper.jpeg")
 ```
 
-The Hamiltonian cycles and paths, named after the Irish mathematician Sir William Rowan Hamilton, is a well-known problem studied in computer science and graph theory. Its origin dates back to a board game called Icosian, invented by Hamilton, in which the player has the task of finding a closed path on the edge of a dodecahedron such that every vertex is visited exactly once.
+The Hamiltonian cycles and paths, named after the Irish mathematician William Rowan Hamilton, is a well known problem studied in computer science and graph theory. Its origin dates back to a board game called Icosian, invented by Hamilton, in which the player has the task of finding a closed path on the edge of a dodecahedron such that every vertex is visited exactly once.
 
 
 ```{r figIcosianBoard, fig.margin = TRUE, fig.cap = "Icosian board[Credit:Royal Irish Academy Library](https://twitter.com/Library_RIA/status/956476613096591360)", fig.height = 3, message=TRUE, cache=TRUE, echo=FALSE, fig.width=6}
@@ -63,9 +63,9 @@ knitr::include_graphics("figures/fig_gridgraph_general.svg")
 knitr::include_graphics("figures/fig_solidgridgraph.svg")
 ```
 
-Hamiltonian path and cycle problems have been studied in detail in the context of grid graphs as initiated by Luccio and Mugnia in 1978 [91]. In 1982, Itai, Papadimitriou and Szwarcfiter [68] showed that it is NP-complete to decide whether a general grid graph (i.e., the boundary of the grid graph is not necessarily a rectangle and the graph may have holes; see Figure 1.2(a)) has a Hamiltonian path or a Hamiltonian cycle. They also gave necessary and sufficient conditions for a rectangular grid graph to have a Hamiltonian cycle, and gave an algorithm to find a Hamiltonian path between any two vertices in a rectangular grid graph if it exists. Recently, Chen et al. [25] improved their algorithm for finding a Hamiltonian path between any two vertices.
+Hamiltonian path and cycle problems on grid graphs was studied by Luccio and Mugnia in 1978. Itai, Papadimitriou and Szwarcfiter later showed that the decision problem of finding a general grid graph is Hamiltonian or not is NP-complete. The authors also provided necessary and sufficient conditions for a rectangular grid graph to have a Hamiltonian cycle, and outlined an algorithm to find a Hamiltonian path between any two vertices in a rectangular grid graph if it exists. Chen et al. subsequentlyimproved their algorithm.
 
-Itai et al. left the Hamiltonian cycle problem open for solid grid graphs (a grid graph without holes but the outer boundary is not necessarily rectangular; see Fig- ure 1.2(b)). Later Umans and Lenhart [119, 120] gave a polynomial time algorithm to find a Hamiltonian cycle (if it exists) in a solid grid graph using a cycle merging technique.
+Later Umans and Lenhart came up with a polynomial time algorithm to find a Hamiltonian cycle (if it exists) in a solid grid graph using a cycle merging technique.
 
 Now then
 
